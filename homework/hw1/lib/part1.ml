@@ -1,4 +1,8 @@
 open Base
 open Util
 
-let rec fib (n : int) : int = todo ()
+let rec fib (n : int) : int = 
+  match n with
+  | 0 -> 0
+  | 1 -> 1
+  | _ -> fib(n-1) + fib(n-2)
